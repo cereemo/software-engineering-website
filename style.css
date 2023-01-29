@@ -1,0 +1,215 @@
+.body {
+    background: #F9F6EE;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .header.box, .nav.box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.container {
+ 
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    grid-template-columns: 10px repeat(8, 1fr);
+    grid-template-rows: 70px 400px 1fr;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "nav nav nav nav nav nav nav nav"
+      "p1 p1 p2 p2 p3 p3 p4 p4"
+      "p5 p5 p6 p6 p7 p7 p8 p8"
+      "ct ct ct ct ct ct ct ct"
+      "ft ft ft ft ft ft ft ft"; 
+  }
+  button {
+    background: black;
+    color: white;
+    text-align: center;
+  }
+  .header {
+    grid-area: hd;
+    text-align: center;
+  }
+  .nav {
+    grid-area: nav;
+    text-align: center;
+    list-style-position: inside;
+    font-size: 1.7rem;
+  }
+
+  .pc1 {
+    grid-area: p1;
+    height: 17em;
+    width: 10em;
+    font-size: 1.5em;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left:-70px;
+    margin-top: -250px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+    background-image: url(https://previews.dropbox.com/p/thumb/ABPxHL1JMSbPi39KCXyt1AvvyzIRw24MaarTubvhAG-ARrG1itN32lj9Aq6HvV1k7XfpH6KYnY23GwjHVANH2Vkkt0uVdSUY4tCSL9iMjQDrfhC0LDc32jAozQlORMzgEQTI5vLEvKF4DS6g0WW7v_1UYtILhxVMrRAeFqP4aiqFvGbSgDW7bep3vY0TgEwsk9EdAgciK77WS1_9tCYIJdwexHEDAq5QbbYoz6L3jozsT5gWYJkTo-ZNwwU1CDYQA2YuKIxcGH-6jqBBsG5-h2BwyNH_1H6HifX7nqK_1vHJEu0ebM5b_YNXTtD-ae56GD1VP6ccuAkgEIsybtvEhodAXqi8pCAhelIzJ4Z_5k7Tqg/p.jpeg?fv_content=true&size_mode=5);
+  background-repeat: no-repeat;
+   
+  }
+  .pc2{
+    grid-area: p2;
+    height: 20em;
+    width: 12em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+         margin-left: 97px;
+      margin-top: -250px;
+        text-align: center;
+        display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+        background: #9E1A1A;
+       
+    }
+  .pc3 {
+    grid-area: p3;
+    height: 17em;
+    width: 10em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 137px;
+    margin-top: -250px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: center;
+    overflow: visible;
+    background: #85BB65;
+  }
+  .pc4 {
+    grid-area: p4;
+    height: 20em;
+    width: 12em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 180px;
+    margin-top: -250px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+    background: black;
+  }
+  .pc5{
+    grid-area: p5;
+    height: 17em;
+    width: 10em;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left:-70px;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+    background: #B53737;
+    
+  }
+  .pc6 {
+    grid-area: p6;
+    height: 20em;
+    width: 12em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 100px;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+    background: #6AA121;
+  }
+  .pc7 {
+    grid-area: p7;
+    height: 17em;
+    width: 10em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 140px;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+    background: #9E1A1A;
+  }
+  .pc8 {
+    grid-area: p8;
+    height: 20em;
+    width: 12em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 184px;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    position: relative;
+    overflow: visible;
+    background: #728C00;
+  }
+  .content{
+    text-align: center;
+  }
+  .footer {
+    grid-area: ft;
+    text-align: center;
+  }
+    
