@@ -1,0 +1,219 @@
+/* Basic Styling Starts Here */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --red:#e58a2f;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+  
+  *::selection{
+    background:var(--red);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  
+  body{
+    background:#fff;
+  }
+  
+  section{
+    padding:2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  /* Basic Styling Ends Here */
+
+  /* Home Section Starts Here */
+
+    .home-container{
+        background:url(../images/home-bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+        min-height: 80vh;
+        align-items: center;
+    }
+    
+    .home .content{
+        flex:1 1 40rem;
+    }
+    
+    .home .image{
+        flex:1 1 40rem;
+    }
+    
+    .home .image img{
+        width:100%;
+        padding:1rem;
+        animation:float 3s linear infinite;
+    }
+    
+    @keyframes float{
+        0%, 100%{
+        transform: translateY(0rem);
+        }
+        50%{
+        transform: translateY(3rem);
+        }
+    }
+    
+    .home .content h3{
+        font-size: 5rem;
+        color:#333;
+    }
+    
+    .home .content p{
+        font-size: 1.7rem;
+        color:#666;
+        padding:1rem 0;
+        line-height: 1.8;
+    }
+  
+  /* Home Section Ends Here */
+
+  /* Heading Section Starts Here */
+
+    .heading{
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+        color:#000;
+    }
+    
+    .heading span{
+        color:var(--red);
+    }
+    
+    .btn{
+        display: inline-block;
+        padding:.8rem 3rem;
+        border:.2rem solid var(--red);
+        color:var(--red);
+        cursor: pointer;
+        font-size: 1.7rem;
+        border-radius: .5rem;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        margin-top: 1rem;
+    }
+    
+    .btn::before{
+        content: '';
+        position: absolute;
+        top:0; right: 0;
+        width:0%;
+        height:100%;
+        background:var(--red);
+        transition: .3s linear;
+        z-index: -1;
+    }
+    
+    .btn:hover::before{
+        width:100%;
+        left: 0;
+    }
+    
+    .btn:hover{
+        color:#fff;
+    }
+
+/* Heading Ends Here */ 
+
+
+
+/* Body Starts Here */
+
+  /* Header Section Starts Here */
+
+        header{
+            position: sticky;
+            top:0; left: 0; right:0;
+            z-index: 1000;
+            background:#fff;
+        }
+
+        header .flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        header .logo{
+            font-size: 2.5rem;
+            font-weight: bolder;
+            color:#000;
+            position: relative;
+        }
+
+        header .logo i{
+            padding-right: .5rem;
+            color:var(--red);
+        }
+
+        header .navbar a{
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 2rem;
+            color:#000;
+        }
+
+        header .navbar a:hover{
+            color:var(--red);
+        }
+
+        #menu-bar{
+            font-size: 3rem;
+            cursor: pointer;
+            color:#666;
+            border:.1rem solid #666;
+            border-radius: .3rem;
+            padding:.5rem 1.5rem;
+            display: none;
+        }
+
+    /* Header Section Ends Here */
+
+    /* Instructions Sections Starts Here */
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+        }
+
+        .instructions .picture img{
+            width: 559.5px;
+            height: 418.5px;
+            margin: 20px;
+        }
+
+    /* Instructions Sections Ends Here */
+
+/* Body Ends Here */
+
