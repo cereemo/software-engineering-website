@@ -201,19 +201,182 @@
 
     /* Instructions Sections Starts Here */
 
+        .instructions h1{
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
         img{
             max-width: 100%;
             max-height: 100%;
             border-radius: 5px;
         }
 
-        .instructions .picture img{
+        .ingre-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap:1.5rem;
+            min-height: 50vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .instructions .ingre-container .picture h1{
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .instructions .ingre-container .picture img #v1{
             width: 559.5px;
             height: 418.5px;
             margin: 20px;
         }
 
+
+        
+
     /* Instructions Sections Ends Here */
+
+    /* Directions Sections Start Here */
+
+    /* Prep Time Starts Here */
+
+    .directions{
+        width: 100%;
+        align-items: center;
+    }
+
+    .directions .prep-time{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 1000px;
+        background-color: transparent;
+        border-radius: 30px;
+        
+    }
+
+    .directions .prep-time .separators{
+        padding: 70px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .directions .prep-time .verticalLine {
+        border-right: 4px solid #000;
+        height: 50px;
+        border-radius: 5px;
+        margin: 50px;
+    }
+
+    .directions .prep-time .separators h2{
+        font-size: large;
+    }
+
+    .directions .prep-time .separators h3{
+        font-size: medium;
+        text-align: left;
+        color: var(--red);
+    }
+    /* Prep Time Ends Here */
+
+    /* Nutri Facts Starts Here */
+        .directions div .nutri-facts{
+        position: absolute;
+        left: 150px;
+        align-items: center;
+        justify-content: left;
+        width: 300px;
+        text-align: center;
+        padding: 0;
+        background-color: antiquewhite;
+        border-radius: 30px;
+        }
+
+        .directions .nutri-facts .box-facts{
+        display: flex;
+       /* align-items: center;*/
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        padding: 0;
+        background-color: rgb(250, 241, 230);
+        border-radius: 30px;
+        }
+
+        .directions .nutri-facts .box-facts .facts{
+            padding: 70px 0;
+            text-align: center;
+        }
+    /* Nutri Facts Ends Here */
+
+    /* Ingredients Starts Here */
+    
+    .ingredients{
+        margin-left: 50px;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        padding: 30px;
+        width: 500px;
+        height: 418.5px;
+      }
+
+      .ingredients h1{
+          font-size: xx-large;
+      }
+
+      .ingredients ul{
+          padding-top: 20px;
+          padding-left: 20px;
+      }
+
+      .ingredients ul li{
+          font-size: small;
+          font-weight: bold;
+          padding: 5px;
+      }
+
+      .ingredients ul hr .rounded{
+          border-top: 3px solid #000;
+          border-radius: 5px;
+      }
+
+      /* Ingredients Ends Here */
+
+    /* Directions Sections Start Here */
+
+    /* Footer Section Starts Here */
+
+.footer{
+    background:#000;
+    text-align: center;
+  }
+  
+  section{
+    padding: 3rem 2rem;
+  }
+  
+  .footer section .share{
+    display: flex;
+    gap:1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer section .credit{
+    color:#fff;
+    font-weight: normal;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .footer section .credit span{
+    color:var(--red);
+  }
+  
+  /* Footer Section Ends Here */
 
 /* Body Ends Here */
 
