@@ -14,131 +14,126 @@
     text-decoration: none;
     text-transform: capitalize;
     transition:all .2s linear;
-  }
+}
   
-  *::selection{
+*::selection{
     background:var(--red);
     color:#fff;
-  }
+}
   
-  html{
+html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
-  }
+}
   
-  body{
+body{
     background:#fff;
-  }
+}
   
-  section{
+section{
     padding:2rem;
     margin: 0 auto;
     max-width: 1200px;
-  }
+}
 
   /* Basic Styling Ends Here */
 
   /* Home Section Starts Here */
 
-    .home-container{
-        background:url(../images/home-bg.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+.home-container{
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
     
-    .home{
-        display: flex;
-        flex-wrap: wrap;
-        gap:1.5rem;
-        min-height: 80vh;
-        align-items: center;
-    }
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 80vh;
+    align-items: center;
+}
     
-    .home .content{
-        flex:1 1 40rem;
-    }
+.home .content{
+    flex:1 1 40rem;
+}
     
-    .home .image{
-        flex:1 1 40rem;
-    }
+.home .image{
+    flex:1 1 40rem;
+}
     
-    .home .image img{
-        width:100%;
-        padding:1rem;
-        animation:float 3s linear infinite;
-    }
+.home .image img{
+    width:100%;
+    padding:1rem;
+    animation:float 3s linear infinite;
+}
     
-    @keyframes float{
-        0%, 100%{
-        transform: translateY(0rem);
-        }
-        50%{
-        transform: translateY(3rem);
-        }
+@keyframes float{
+    0%, 100%{
+    transform: translateY(0rem);
     }
+    50%{
+    transform: translateY(3rem);
+    }
+}
     
-    .home .content h3{
+.home .content h3{
         font-size: 5rem;
         color:#333;
-    }
+}
     
-    .home .content p{
-        font-size: 1.7rem;
-        color:#666;
-        padding:1rem 0;
-        line-height: 1.8;
-    }
+.home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+    line-height: 1.8;
+}
   
   /* Home Section Ends Here */
 
   /* Heading Section Starts Here */
-
-    .heading{
+.heading{
         text-align: center;
         font-size: 3.5rem;
         margin-bottom: 2.5rem;
-        color:#000;
-    }
+        color:#000;}
+.heading span{
+        color:var(--red);}
+.btn{
+    display: inline-block;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--red);
+    color:var(--red);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem    
+}
     
-    .heading span{
-        color:var(--red);
-    }
+.btn::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:var(--red);
+    transition: .3s linear;
+    z-index: -1;
+}
     
-    .btn{
-        display: inline-block;
-        padding:.8rem 3rem;
-        border:.2rem solid var(--red);
-        color:var(--red);
-        cursor: pointer;
-        font-size: 1.7rem;
-        border-radius: .5rem;
-        position: relative;
-        overflow: hidden;
-        z-index: 0;
-        margin-top: 1rem;
-    }
+.btn:hover::before{
+    width:100%;
+    left: 0;
+}
     
-    .btn::before{
-        content: '';
-        position: absolute;
-        top:0; right: 0;
-        width:0%;
-        height:100%;
-        background:var(--red);
-        transition: .3s linear;
-        z-index: -1;
-    }
-    
-    .btn:hover::before{
-        width:100%;
-        left: 0;
-    }
-    
-    .btn:hover{
-        color:#fff;
-    }
+.btn:hover{
+    color:#fff;
+}
 
 /* Heading Ends Here */ 
 
@@ -146,235 +141,277 @@
 
 /* Body Starts Here */
 
-  /* Header Section Starts Here */
+/* Header Section Starts Here */
 
-        header{
-            position: sticky;
-            top:0; left: 0; right:0;
-            z-index: 1000;
-            background:#fff;
-        }
+header{
+    position: sticky;
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    background:#fff;
+}
 
-        header .flex{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-        }
+header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
-        header .logo{
-            font-size: 2.5rem;
-            font-weight: bolder;
-            color:#000;
-            position: relative;
-        }
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#000;
+    position: relative;
+}
 
-        header .logo i{
-            padding-right: .5rem;
-            color:var(--red);
-        }
+header .logo i{
+    padding-right: .5rem;
+    color:var(--red);
+}
 
-        header .navbar a{
-            font-size: 2rem;
-            font-weight: bold;
-            margin-left: 2rem;
-            color:#000;
-        }
+header .navbar a{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    color:#000;
+}
 
-        header .navbar a:hover{
-            color:var(--red);
-        }
+header .navbar a:hover{
+    color:var(--red);
+}
 
-        #menu-bar{
-            font-size: 3rem;
-            cursor: pointer;
-            color:#666;
-            border:.1rem solid #666;
-            border-radius: .3rem;
-            padding:.5rem 1.5rem;
-            display: none;
-        }
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color:#666;
+    border:.1rem solid #666;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display: none;
+}
 
-    /* Header Section Ends Here */
+/* Header Section Ends Here */
 
-    /* Instructions Sections Starts Here */
+/* Instructions Sections Starts Here */
 
-        .instructions h1{
-            text-align: center;
-            font-size: xx-large;
-            font-weight: bolder;
-        }
+.instructions h1{
+     text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
 
-        img{
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 5px;
-        }
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
 
-        .ingre-container{
-            display: flex;
-            flex-wrap: wrap;
-            gap:1.5rem;
-            min-height: 50vh;
-            align-items: center;
-            justify-content: center;
-        }
+.ingre-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
 
-        .instructions .ingre-container .picture h1{
-            font-weight: bold;
-            font-size: x-large;
-        }
+.instructions .ingre-container .picture h1{
+    font-weight: bold;
+    font-size: x-large;
+}
 
-        .instructions .ingre-container .picture img #v1{
-            width: 559.5px;
-            height: 418.5px;
-            margin: 20px;
-        }
-
-
-        
-
+.instructions .ingre-container .picture img #v1{
+    width: 559.5px;
+    height: 418.5px;
+    margin: 20px;
+}
     /* Instructions Sections Ends Here */
 
-    /* Directions Sections Start Here */
+/* Directions Sections Start Here */
 
     /* Prep Time Starts Here */
 
-    .directions{
-        width: 100%;
-        align-items: center;
-    }
+.directions{
+    width: 100%;
+    align-items: center;
+}
 
-    .directions .prep-time{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 1000px;
-        background-color: transparent;
-        border-radius: 30px;
-        
-    }
+.directions .prep-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 30px;   
+}
 
-    .directions .prep-time .separators{
-        padding: 70px 0;
-        justify-content: center;
-        text-align: center;
-    }
+.directions .prep-time .separators{
+    padding: 70px 0;
+    justify-content: center;
+    text-align: center;
+}
 
-    .directions .prep-time .verticalLine {
-        border-right: 4px solid #000;
-        height: 50px;
-        border-radius: 5px;
-        margin: 50px;
-    }
+.directions .prep-time .verticalLine {
+    border-right: 4px solid #000;
+    height: 50px;
+    border-radius: 5px;
+    margin: 50px;
+}
 
-    .directions .prep-time .separators h2{
-        font-size: large;
-    }
+.directions .prep-time .separators h2{
+    font-size: large;
+}
 
-    .directions .prep-time .separators h3{
-        font-size: medium;
-        text-align: left;
-        color: var(--red);
-    }
-    /* Prep Time Ends Here */
+.directions .prep-time .separators h3{
+    font-size: medium;
+    text-align: left;
+    color: var(--red);
+}
 
-    /* Nutri Facts Starts Here */
-        .directions div .nutri-facts{
-        position: absolute;
-        left: 150px;
-        align-items: center;
-        justify-content: left;
-        width: 300px;
-        text-align: center;
-        padding: 0;
-        background-color: antiquewhite;
-        border-radius: 30px;
-        }
+.directions .prep-time .separators h3 i{
+    padding-right: .5rem;
+    color:var(--red);
+}
+/*----- Prep Time Ends Here */
 
-        .directions .nutri-facts .box-facts{
-        display: flex;
-       /* align-items: center;*/
-        justify-content: center;
-        text-align: center;
-        margin: 10px;
-        padding: 0;
-        background-color: rgb(250, 241, 230);
-        border-radius: 30px;
-        }
+/*----- Nutri Facts Starts Here */
 
-        .directions .nutri-facts .box-facts .facts{
-            padding: 70px 0;
-            text-align: center;
-        }
-    /* Nutri Facts Ends Here */
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 80vh;
+    align-items: center;
+}
 
-    /* Ingredients Starts Here */
-    
-    .ingredients{
-        margin-left: 50px;
-        background-color: antiquewhite;
-        border-radius: 5px;
-        padding: 30px;
-        width: 500px;
-        height: 418.5px;
-      }
+.column{
+    display: flex;
+    flex-direction: column;
+}
 
-      .ingredients h1{
-          font-size: xx-large;
-      }
+.body .column .nutri-facts{
+    flex:1 1 20rem;
+    background-color: antiquewhite;
+    padding: 5px;
+    align-self: flex-end;
+    margin: 5px;
+    width: 400px;
+    border-radius: 20px;
+}
 
-      .ingredients ul{
-          padding-top: 20px;
-          padding-left: 20px;
-      }
+.body .nutri-facts .box-facts{
+    display: flex;
+    width: 300px;
+    margin: 5%;
+    flex-direction: column;
+    border-radius: 30px;
+}
 
-      .ingredients ul li{
-          font-size: small;
-          font-weight: bold;
-          padding: 5px;
-      }
+.body .nutri-facts h1{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5%;
+}
 
-      .ingredients ul hr .rounded{
-          border-top: 3px solid #000;
-          border-radius: 5px;
-      }
+.body .nutri-facts p{
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 5%;
+}
 
-      /* Ingredients Ends Here */
+.body .nutri-facts ul{
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
-    /* Directions Sections Start Here */
+.body .nutri-facts ul li{
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+}
+/*----- Nutri Facts Ends Here -----*/
 
-    /* Footer Section Starts Here */
+/*----- Food Direct Starts Here -----*/
+.body .food-direc{
+    flex:1 1 40rem;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.body .food-direc h1{
+    font-size: xx-large;
+}
+
+.body .food-direc h2{
+    font-size: x-large;
+}
+
+.body .food-direc p{
+    font-size: large;
+}
+/*----- Food Direct Ends Here -----*/
+
+/*----- Ingredients Starts Here -----*/
+.body .column .ingredients{
+    flex:1 1 20rem;
+    align-self: flex-end;
+    padding: 5%;
+    margin: 5px;
+    background-color: antiquewhite;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.ingredients h1{
+    font-size: x-large;
+}
+
+.ingredients ul{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.ingredients ul li{
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*----- Ingredients Ends Here -----*/
+
+/*----- Directions Sections Start Here -----*/
+
+/*----- Footer Section Starts Here -----*/
 
 .footer{
     background:#000;
     text-align: center;
-  }
+}
   
-  section{
+section{
     padding: 3rem 2rem;
-  }
+}
   
-  .footer section .share{
+.footer section .share{
     display: flex;
     gap:1.5rem;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
   
-  .footer section .credit{
+.footer section .credit{
     color:#fff;
     font-weight: normal;
     font-size: 2rem;
     margin-top: 3rem;
-  }
+}
   
-  .footer section .credit span{
+.footer section .credit span{
     color:var(--red);
-  }
+}
   
   /* Footer Section Ends Here */
 
