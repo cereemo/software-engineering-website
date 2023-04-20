@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Endangered Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/055779520f.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- custom js file link  -->
+    <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Food<span>Flow</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#service">Services</a></li>
+				<li><a href="#">Support Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+			<a href="#" class="btn">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h4>Hi there, are</h4>
+			<h1>Y<span>ou</span></h1>
+			<h3>Ready to get cooking?.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+    <a id="about"></a>
+	<section class="about">
+		<div class="main">
+			<img src="Images/food2.jpg">
+			<div class="about-text">
+				<h2>About Us</h2>
+				<h5>Cooking <span>& Tasting</span></h5>
+				<p>Our goal is to provide you with easy and accessible recipes that are perfect for any occasion. Whether you're a seasoned cook or a beginner, we have a recipe for you. We believe in using fresh ingredients and sharing healthy and nutritious meals, without sacrificing taste.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+    <a id="service"></a>
+	<div class="service" >
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box2">
+			<div class="card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+				<h5>Recipe Search Engine</h5>
+				<div class="pra">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, aliquid obcaecati reiciendis, maiores blanditiis a pariatur </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+                <i class="fa-solid fa-wheat-awn"></i>
+				<h5>Nutrition Information</h5>
+				<div class="pra">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, aliquid obcaecati reiciendis, maiores blanditiis a pariatur </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa-solid fa-star"></i>
+				<h5>Reviews and Ratings</h5>
+				<div class="pra">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quia, aliquid obcaecati reiciendis, maiores blanditiis a pariatur </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Us------>
+    <a id="contact"></a>
+	<div class="contact-me" style="margin-bottom: 5%;">
+		<p>Let Us Answers Your Questions.</p>
+		<a class="button-two" href="#">Contact Us</a>
+	</div>
+
+    <!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <!-- Search Engine Starts Here-->
+
+    <form style="margin: auto;">
+       <i class="fa fa-search"></i>
+       <input type="text" name="" id="search-item" placeholder="Search product"
+       onkeyup="search()">
+   </form>
+
+   <!-----Search Engine Ends Here----->
+
+   <!-----Food Section Starts Here----->
+
+   <div class="box-container" id="box-container" style="margin-top: 5%;">
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+         <a href="Recipes/Masala_Chicken.html">  
+           <img src="Images/chicken-masala.png" alt="">
+       </a>
+           <h4>Masala Chicken</h4>    
+           <h4>Category: Indian Food</h4> 
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/balsamic.html">
+               <img src="Images/balsamic-salad-2.0.png" alt="">
+           </a>
+           <h4>Balsamic Grilled Steak Salad with Peaches</h4>    
+           <h4>Category: American Food</h4>        
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/avocado.html">
+               <img src="Images/avocado-toast-2.0.png" alt="">
+           </a>
+           <h4>Avocado Toast</h4>
+           <h4>Category: American Food</h4>            
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/long-island.html">
+               <img src="Images/iced-tea-2.0.png" alt="">
+           </a>
+           <h4>Long Island Iced Tea</h4>
+           <h4>Category: Drinks</h4> 
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/Spaghettio.html">
+               <img src="Images/spaghettiOs.png" alt="">
+           </a>
+           <h4>Adult "SpaghettiOs"</h4>  
+           <h4>Category: Italian Food</h4>   
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="../Recipes/choc-cake.html">
+               <img src="Images/choc-cake.png" alt="">
+           </a>
+           <h4>Chocolate Cake</h4>
+           <h4>Category: Dessert</h4> 
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="../Recipes/tortellini.html">
+               <img src="Images/cheese-tortellini.png" alt="">
+           </a>
+           <h4>Cheese Tortellini in Creamy Marinara</h4> 
+           <h4>Category: Italian Food</h4>     
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/shrimp.html">
+               <img src="Images/shrimps.png" alt="">
+           </a>
+           <h4>Cajun Shrimp</h4> 
+           <h4>Category: American Food</h4>     
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/sandwich.html">
+               <img src="Images/Sandwish.jpg" alt="">
+           </a>
+           <h4>Avocado Grilled Cheese Sandwich</h4>  
+           <h4>Category: American Food</h4>    
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/tuna.html">
+               <img src="Images/tuna.png" alt="">
+           </a>
+           <h4>Perfect Tuna Steak</h4>  
+           <h4>Category: Seafood</h4>    
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/salmon.html">
+               <img src="Images/salmon.png" alt="">
+           </a>
+           <h4>Honey Garlic Salmon</h4> 
+           <h4>Category: Seafood</h4>     
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/mousse.html">
+               <img src="Images/mousse.png" alt="">
+           </a>
+           <h4>Chocolate Mousse</h4> 
+           <h4>Category: Dessert</h4>     
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/blueberry.html">
+               <img src="Images/blueberry.png" alt="">
+           </a>
+           <h4>Blueberry Galette</h4> 
+           <h4>Category: Dessert</h4>     
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="Recipes/raspberry-drink.html">
+               <img src="Images/raspberry-drink.png" alt="">
+           </a>
+           <h4>Raspberry Iced Tea</h4>   
+           <h4>Category: Beverages</h4>   
+       </div>
+
+       <div class="box">
+           <span class="price">4.5 <i class="fas fa-star"></i></span>
+           <a href="../Recipes/mocha.html">
+               <img src="Images/mocha.png" alt="">
+           </a>
+           <h4>Mocha Frappe</h4> 
+           <h4>Category: Beverages</h4>     
+       </div>
+
+       <div class="box">
+        <span class="price">4.5 <i class="fas fa-star"></i></span>
+        <a href="Recipes/mocha.html">
+            <img src="Images/soda.png" alt="">
+        </a>
+        <h4>Grapefruit Soda</h4> 
+        <h4>Category: Beverages</h4>     
+    </div>
+   </div>
+
+   <!-- Food Section Ends Here -->
+
+</section>
+
+<!-- popular section ends -->
+
+	<!------footer start--------->
+	<footer>
+		<p>FoodFlow</p>
+		<p>For more news, facts, and info - please click on the link below to subscribe to our social media:</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">CopyRight By Valeria Cueto Serrano</p>
+	</footer>
+</body>
+</html>
